@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <style>
   * {
+    background-color: green ;
     margin:0;
     border: none;
     outline: none;
@@ -19,6 +20,9 @@
 
   #messages {
     overflow: auto;
+  #button {
+    border: 50px;
+  }
   }
 
   .message {
@@ -33,6 +37,10 @@
 
 <!-- Imports jQuery -->
 <script src='//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'>
+$('button').onClick(){
+
+}
+<button type="button" id = 'button'> You might as well press it </button>
 </script>
 <!-- Imports goog.appengine.Channel. -->
 <script src='/_ah/channel/jsapi'></script>
