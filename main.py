@@ -67,3 +67,9 @@ app = webapp2.WSGIApplication([
   ('/_ah/channel/connected/', HandleConnect),
   ('/_ah/channel/disconnected/', HandleDisconnect),
 ], debug=True)
+
+class Greet(webapp2.RequestHandler):
+		@login_required
+		def get(self):
+			user = users.get_current_user()
+			self.response.write("Hi, " + user.email() + "!")
